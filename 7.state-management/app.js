@@ -31,5 +31,6 @@ const normalizeData = response => {
   store.dispatch({ type: 'SET_RECIPES', payload: normalizeRecipes(response.data) });
 };
 
-axios.get('server/recipes.json')
+//thay bằng server/recipes.json
+axios.get('https://api.myjson.com/bins/10eicm')
   .then(normalizeData);

@@ -1,10 +1,10 @@
+
 // Here we define colors object as a constant
 const colors = {
   red: '#FF0000',
   green: '#00FF00',
   blue: '#0000FF'
 };
-
 // Uncomment line below to see an error
 // colors = {};
 

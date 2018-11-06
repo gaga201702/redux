@@ -3,7 +3,7 @@
 function reducer(state, action) {
   switch (action.type) {
     case 'INC':
-      return Object.assign({}, state, { counter: state.counter + 1 });
+      return {...state, counter: state.counter + 1 };
     case 'DEC':
       return Object.assign({}, state, { counter: state.counter - 1 });
     default:

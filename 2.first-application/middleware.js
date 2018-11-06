@@ -4,8 +4,9 @@ const logMiddleware = ({ getState, dispatch }) => (next) => (action) => {
   next(action);
 };
 
-const URL = 'db.json';
+const URL = 'https://s3.amazonaws.com/500tech-shared/db.json';//hoặc db.json
 
+//sử dụng axion đề fetch data
 function fetchData(url, callback) {
   axios.get(url)
     .then(callback)

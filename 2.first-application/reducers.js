@@ -11,6 +11,12 @@ const recipesReducer = (recipes = [], action) => {
   return recipes;
 };
 
+const ingredientsReducer = (ingredients = [], action) => {
+  return ingredients;
+}
+
+//rootReducer : tập hợp các reducer 
 const rootReducer = Redux.combineReducers({
-  recipes: recipesReducer
+  recipes: recipesReducer,
+  ingredients: ingredientsReducer,
 });
